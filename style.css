@@ -287,6 +287,7 @@ button:hover {
 
 .project-card {
   background: white;
+  color: #333; 
   padding: 30px;
   margin-top: 30px;
   border-radius: 15px;
