@@ -1,0 +1,536 @@
+/* ------------------ GLOBAL ------------------ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+}
+
+/* ------------------ HEADER ------------------ */
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ------------------ NAVBAR ------------------ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 28px;
+  color: #c0392b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c0392b;
+}
+
+h1 {
+  color: #c0392b;
+}
+
+/* ------------------ INTRO ------------------ */
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ------------------ MENU ------------------ */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+ul {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* ------------------ PHOTOS ------------------ */
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* ------------------ CONTACT ------------------ */
+
+.contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #2980b9;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #555;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 600px) {
+
+  body {
+    margin: 20px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #c0392b;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #a93226;
+}
+
+.password-generator {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#resultat {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.todo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#todo-input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#todo-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery img {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  margin-top: 20px;
+}
+/* ------------------ HERO ------------------ */
+
+.hero {
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px;
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  color: white;
+  border-radius: 15px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+}
+
+#skills ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#skills li {
+  list-style: none;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+.project-card {
+  background: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  animation: fadeIn 1s forwards;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #c0392b;
+}
+
+.project-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-card button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card button:hover {
+  background: #a93226;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.6);
+}
+
+#contact {
+  text-align: center;
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#about {
+  text-align: center;
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* ------------------ DARK MODE ------------------ */
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .nav-links a {
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: white;
+}
+.dark-mode #skills li {
+  background: #2c2c2c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.dark-mode #skills li:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+
+.dark-mode #about,
+.dark-mode #contact {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #000, #333);
+}
+
+.dark-mode footer {
+  color: #ccc;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+button:hover {
+  background-color: #a93226;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.6);
+}
+.profile-pic {
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+.projects-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.dark-mode .project-card {
+  background: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .project-card h3 {
+  color: #e74c3c;
+}
+
+.dark-mode .project-card p {
+  color: #ddd;
+}
+
+.dark-mode .project-card button {
+  background: #e74c3c;
+}
+
+.dark-mode .project-card button:hover {
+  background: #c0392b;
+}
+
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card button {
+  margin: 10px;
+}
+.dark-mode .project-card {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+#skills li {
+  list-style: none;
+  background: #ffffff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #c0392b;
+  transition: 0.3s;
+}
+
+#skills li:hover {
+  background: #c0392b;
+  color: white;
+  transform: translateY(-3px);
+}
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+}
+.dark-mode .contact-form {
+  background: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background: #3a3a3a;
+  color: white;
+  border: 1px solid #555;
+}
